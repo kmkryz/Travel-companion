@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Companion App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body data-page="home">
+    <header>
+        <h1>Travel Companion</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="zipcode.html">Zip Code Info</a></li>
+                <li><a href="income.html">Income Data</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainContent">
+        <section id="hero">
+            <div class="hero-overlay">
+                <h2>Welcome to Travel Companion</h2>
+                <p>Your go-to app for all travel-related information</p>
+            </div>
+        </section>
+        <section class="location-section">
+            <h2>Your Location</h2>
+            <p id="demo">Click the button to get your coordinates and display the map:</p>
+            <button onclick="getLocation()" id="locationButton">Get Location</button>
+            <canvas id="mapCanvas" width="800" height="600"></canvas>
+          </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Kaitlyn Kryzanski. WDD 330 - Travel Companion</p>
+    </footer>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="geolocation.js"></script>
+</body>
+</html>

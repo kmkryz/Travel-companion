@@ -1,0 +1,246 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+header {
+    background: #5cb85c;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #173617;
+}
+#mainContent {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem; 
+}
+section {
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+.result-item {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result-item img {
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form label {
+    margin-top: 1rem;
+}
+form input, form textarea {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+form button {
+    padding: 0.75rem;
+    border: none;
+    background: #5cb85c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+form button:hover {
+    background: #4cae4c;
+}
+#hero {
+    position: relative;
+    background: url('images/Hero.webp') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.search-section input {
+    width: 60%;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 2px solid #5cb85c;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s;
+}
+.search-section input:focus {
+    border-color: #4cae4c;
+}
+.search-section button {
+    padding: 1rem 2rem;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+.search-section button:hover {
+    background: #4cae4c;
+}
+
+
+
+/* Styles for Geolocation section */
+.location-section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .location-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .location-section p {
+    margin: 1rem 0;
+    padding: 10px;
+  }
+  
+  .location-section button {
+    padding: 1rem 2rem;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+  
+  .location-section button:hover {
+    background: #4cae4c;
+  }
+  
+  #mapCanvas {
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+  
+  .alert {
+    background-color: #f44336;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .alert .close-alert {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .alert .close-alert:hover {
+    color: black;
+  }
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#aboutSection {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+#aboutSection h2, p {
+    text-align: center;
+}
+
+@keyframes grow-shrink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.search-section button.animate {
+    animation: grow-shrink 0.6s ease-in-out;
+}
+
+.location-section button.animate {
+    animation: grow-shrink 0.6s ease-in-out;
+}

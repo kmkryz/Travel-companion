@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info - Travel Companion App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body data-page="weather">
+    <header>
+        <h1>Travel Companion</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="zipcode.html">Zip Code Info</a></li>
+                <li><a href="income.html">Income Data</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainContent">
+        <section class="search-section">
+            <h2>Enter Zip Code for Weather Info</h2>
+            <input type="text" id="zipInput" placeholder="Enter zip code...">
+            <button id="searchButton">Search</button>
+            <div id="weatherInfo"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Kaitlyn Kryzanski. WDD 330 - Travel Companion</p>
+    </footer>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

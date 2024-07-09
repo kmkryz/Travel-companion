@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Travel Companion App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body data-page="home">
+    <header>
+        <h1>Travel Companion</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="zipcode.html">Zip Code Info</a></li>
+                <li><a href="income.html">Income Data</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainContent">
+        <section id="aboutSection">
+            <h2>Contact</h2>
+            <p>Let us know your thoughts</p>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Kaitlyn Kryzanski. WDD 330 - Travel Companion</p>
+    </footer>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
