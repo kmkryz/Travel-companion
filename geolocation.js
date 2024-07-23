@@ -16,6 +16,7 @@ const searchButton = document.getElementById('locationButton');
   }
 }
 
+
 function showPosition(position) {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;

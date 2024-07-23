@@ -139,8 +139,6 @@ form button:hover {
     background: #4cae4c;
 }
 
-
-
 /* Styles for Geolocation section */
 .location-section {
     background: #fff;
@@ -148,18 +146,23 @@ form button:hover {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  .location-section h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.location-section h2 {
     margin-bottom: 1rem;
-  }
-  
-  .location-section p {
+}
+
+.location-section p {
     margin: 1rem 0;
     padding: 10px;
-  }
-  
-  .location-section button {
+}
+
+.location-section button {
     padding: 1rem 2rem;
     background: #5cb85c;
     color: #fff;
@@ -169,24 +172,43 @@ form button:hover {
     font-size: 1.2rem;
     transition: background 0.3s;
 }
-  
-  .location-section button:hover {
+
+.location-section button:hover {
     background: #4cae4c;
-  }
-  
-  #mapCanvas {
+}
+
+#mapCanvas {
     margin-top: 1rem;
     border-radius: 5px;
-  }
-  
-  .alert {
+    width: 100%;
+    max-width: 100%; /* Ensure the canvas does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure the map content and button stay in place on larger screens */
+@media (min-width: 768px) {
+    .location-section {
+        flex-direction: column;
+    }
+
+    .location-section p,
+    .location-section button {
+        margin: 1rem 0;
+    }
+
+    #mapCanvas {
+        margin-top: 1rem;
+    }
+}
+
+.alert {
     background-color: #f44336;
     color: white;
     padding: 20px;
     margin-bottom: 15px;
-  }
-  
-  .alert .close-alert {
+}
+
+.alert .close-alert {
     margin-left: 15px;
     color: white;
     font-weight: bold;
@@ -195,12 +217,11 @@ form button:hover {
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .alert .close-alert:hover {
-    color: black;
-  }
+}
 
+.alert .close-alert:hover {
+    color: black;
+}
 
 footer {
     background: #333;
@@ -212,7 +233,6 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 #aboutSection {
     text-align: left;
